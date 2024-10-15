@@ -463,7 +463,7 @@ function download-resources {
     ProgressWriter -Status "Downloading Parsec" -PercentComplete $PercentComplete
     (New-Object System.Net.WebClient).DownloadFile("https://builds.parsecgaming.com/package/parsec-windows.exe", "C:\ParsecTemp\Apps\parsec-windows.exe")
     ProgressWriter -Status "Downloading Parsec Virtual Display Driver" -percentcomplete $PercentComplete
-    (New-Object System.Net.WebClient).DownloadFile("https://builds.parsec.app/vdd/parsec-vdd-0.37.0.0.exe", "C:\ParsecTemp\Apps\parsec-vdd.exe")
+    (New-Object System.Net.WebClient).DownloadFile("https://builds.parsec.app/vdd/parsec-vdd-0.45.0.0.exe", "C:\ParsecTemp\Apps\parsec-vdd.exe")
     ProgressWriter -Status "Downloading GPU Updater" -PercentComplete $PercentComplete
     (New-Object System.Net.WebClient).DownloadFile("https://s3.amazonaws.com/parseccloud/image/parsec+desktop.png", "C:\ParsecTemp\parsec+desktop.png")
     (New-Object System.Net.WebClient).DownloadFile("https://s3.amazonaws.com/parseccloud/image/white_ico_agc_icon.ico", "C:\ParsecTemp\white_ico_agc_icon.ico")
